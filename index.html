@@ -11,7 +11,8 @@
     <p class="hero-note">2030 年 4 月 新規オープン</p>
     <h1>ごはん処 こもれび</h1>
     <p>東京都港区の、定食と季節の小鉢のお店です。</p>
-    <p class="hero-phone">ご予約・お問い合わせ：03-0000-1234</p>
+    <p class="hero-phone">ご予約・お問い合わせ：<span id="phone-header"></span></p>
+    <p class="open-status" id="open-status"></p>
   </header>
   <main>
     <section>
@@ -20,12 +21,17 @@
       <p>営業時間：<span id="hours">準備中</span></p>
     </section>
     <section>
+      <h2>ランチメニュー</h2>
+      <button id="menu-button" type="button">メニューを見る</button>
+      <ul id="menu-list" hidden></ul>
+    </section>
+    <section>
       <h2>ご予約</h2>
-      <p>お電話でご予約いただけます。電話番号：03-0000-1234</p>
+      <p>お電話でご予約いただけます。電話番号：<span id="phone-reserve"></span></p>
     </section>
   </main>
   <footer>
-    <p>ごはん処 こもれび ／ 東京都港区 ／ 電話 03-0000-1234</p>
+    <p>ごはん処 こもれび ／ 東京都港区 ／ 電話 <span id="phone-footer"></span></p>
   </footer>
   <script src="script.js"></script>
 </body>
