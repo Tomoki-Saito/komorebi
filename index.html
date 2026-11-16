@@ -28,6 +28,18 @@
     <section>
       <h2>ご予約</h2>
       <p>お電話でご予約いただけます。電話番号：<span id="phone-reserve"></span></p>
+      <div class="reserve-form">
+        <label>お名前 <input id="reserve-name" type="text"></label>
+        <label>日付 <input id="reserve-date" type="date"></label>
+        <label>人数 <input id="reserve-people" type="number" min="1" max="8" value="2"></label>
+        <button id="reserve-button" type="button">予約する</button>
+        <p id="reserve-message"></p>
+      </div>
+    </section>
+    <section class="owner">
+      <h2>店長用：ご予約の一覧</h2>
+      <ul id="reserve-list"></ul>
+      <p id="reserve-count"></p>
     </section>
   </main>
   <footer>
